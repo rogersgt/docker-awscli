@@ -1,0 +1,19 @@
+version: 2.1
+defaults: &defaults
+  working_directory: ~/docker-awscli
+  docker:
+    - image: node:10
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - setup_remote_docker
+      - run: yarn build
+
+workflows:
+  version: 2.1
+
+  general:
+    jobs:
+      - build
