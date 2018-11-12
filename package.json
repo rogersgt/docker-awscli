@@ -1,11 +1,7 @@
 {
   "name": "docker-awscli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "docker build -t gradyrogers/awscli ."
-  },
+  "description": "docker image with awscli",
   "author": "Grady Rogers",
   "license": "MIT"
 }
