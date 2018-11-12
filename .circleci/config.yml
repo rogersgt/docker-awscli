@@ -1,8 +1,11 @@
 version: 2.1
 defaults: &defaults
   working_directory: ~/docker-awscli
-  docker:
-    - image: node:10
+  machine:
+    node:
+      version: 10.0.0
+    services:
+      - docker
 
 jobs:
   build:
