@@ -9,6 +9,7 @@ jobs:
     <<: *defaults
     steps:
       - setup_remote_docker
+      - checkout
       - run: yarn build
 
 workflows:
